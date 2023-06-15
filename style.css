@@ -73,11 +73,11 @@
     font-size: 40px;
 }
 
-.Buttons{
+.btn{
     margin: 30px;
 }
 
-.Buttons button{
+.btn button{
     padding: 9px 14px;
     border-radius: 20px;
     color: azure;
@@ -88,8 +88,24 @@
     cursor: pointer;
 }
 
-.Buttons button:hover{
+.btn button:hover{
     background-color: white;
     color: black;
+}
+
+
+/* Blog CSS */
+
+.blogcontainer{
+    font-family: 'Fira Sans', sans-serif;
+}
+
+.blogItem{
+    margin: 20px;
+    /* font-family: 'Fira Sans', sans-serif; */
+}
+
+.blogItem a{
+    font-family: 'Source Code Pro', monospace;
 }
 
