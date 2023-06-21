@@ -125,10 +125,43 @@
 
 .skillItem{
     display: flex;
+    font-family: 'Source Code Pro', monospace;
+    align-items: center;
+    font-weight: 1000;
 }
 
 .skill{
-    width: 23px;
-    height: 23px;
+    width: 245px;
+    height: 6px;
     background-color: aqua;
+    border: 2px solid black;
+}
+
+.t7{
+    width: 85px;
+    background-color: orange;
+}
+
+.t5{
+    width: 60px;
+}
+
+.t3{
+    width: 36px;
+    background-color: yellow;
+}
+
+.t16{
+    width: 196px;
+    background-color: blue;
+}
+
+.t8{
+    width: 98px;
+    background-color: red;
+}
+
+.t10{
+    width: 123px;
+    background-color: green;
 }
