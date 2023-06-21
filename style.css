@@ -8,10 +8,12 @@
 
 .sidebar{
     /* background-color: red; */
+    position: absolute;
     background-color: gray;
     /* width: 350px; */
     font-family: 'Fira Sans', sans-serif;
     height: 100vh;
+    transition: transform 0.3s ease-in;
 }
 
 .sidebar nav{
@@ -54,6 +56,7 @@
 }
 
 .devInfo{
+    font-size: 16px;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -61,17 +64,61 @@
 }
 
 .hello{
-    font-size: 65px;
+    font-size: 3em;
 }
 
 .name{
-    font-size: 50px;
+    font-size: 3em;
     font-weight: bold;
     font-family: 'Fira Sans', sans-serif;
 }
 
 .about{
-    font-size: 40px;
+    font-size: 2.5em;
+}
+
+.contactform{
+    padding: 0 44px;
+    padding-top: 140px;
+    font-family: 'Fira Sans', sans-serif;
+    margin: 0 160px;
+}
+
+.contactform h1{
+    font-family: 'Source Code Pro', monospace;
+    text-align: center;
+}
+
+.contactform form{
+    margin: 0 30px;
+}
+
+.contactform form div{
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.contactform form div input{
+    /* width: 16vw; */
+    border-radius: 5px;
+    margin: 6px 0 0 0;
+    padding: 3px;
+}
+
+#form-check{
+    flex-direction: row;
+}
+
+#form-check input{
+    width: 20px;
+    margin: 3px 0;
+}
+
+#emailHelp{
+    font-size: 10px;
+    color: rgb(4, 4, 103);
+    margin: 0 5px;
 }
 
 .btn{
@@ -79,6 +126,7 @@
 }
 
 .btn button{
+    width: 100px;
     padding: 9px 14px;
     border-radius: 20px;
     color: azure;
@@ -99,6 +147,7 @@
 
 .blogcontainer{
     font-family: 'Fira Sans', sans-serif;
+    margin: 0 90px;
 }
 
 .blogItem{
@@ -108,6 +157,10 @@
 
 .blogItem a{
     font-family: 'Source Code Pro', monospace;
+}
+
+.intro{
+    margin: 0 90px;
 }
 
 .intro h2{
@@ -179,16 +232,27 @@
     left: 10px;
 }
 
+.ham{
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
 .cross{
-    margin-left: 135px;
+    margin-left: 185px;
+    margin-top: 8px;
 }
 
 @media (max-width: 750px){
     *{
 
     }
-    /* .sidebar{
-        transform: translate(-443px, 0px);
-        position: absolute;
-    } */
+    .devInfo{
+        font-size: 10px;
+    }
+    .devPic{
+        display: none;
+    }
+    .intro,.blogcontainer.contactform{
+        margin: 50px 8px;
+    }
 }
