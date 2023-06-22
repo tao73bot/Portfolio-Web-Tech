@@ -123,6 +123,7 @@
 
 .btn{
     margin: 30px;
+    font-size: 16px;
 }
 
 .btn button{
@@ -132,8 +133,8 @@
     color: azure;
     background-color: black;
     font-weight: bold;
-    font-size: 20px;
-    margin: 0 3px;
+    font-size: 16px;
+    margin: 3px 3px;
     cursor: pointer;
 }
 
@@ -242,6 +243,28 @@
     margin-top: 8px;
 }
 
+.social-icons {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .social-icons li {
+    display: inline-block;
+    margin-left: 5px;
+  }
+  
+  .social-icons li a {
+    color: #333;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 5px;
+  }
+  
+
 @media (max-width: 750px){
     *{
 
@@ -251,6 +274,9 @@
     }
     .devPic{
         display: none;
+    }
+    .btn button{
+        font-size: 10px;
     }
     .intro,.blogcontainer.contactform{
         margin: 50px 8px;
